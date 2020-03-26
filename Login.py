@@ -5,8 +5,8 @@ import sys
 import os
 import HtmlTestRunner
 sys.path.append(os.path.join(os.path.dirname(__file__),"..",".."))
-from PytestDemo.Pages.loginPage import LoginPage
-from PytestDemo.Pages.homePage import HomePage
+from PytestDemo.Pages.loginPage1 import LoginPage
+from PytestDemo.Pages.homePage1 import HomePage
 class Logintest(unittest.TestCase):
 
     @classmethod
