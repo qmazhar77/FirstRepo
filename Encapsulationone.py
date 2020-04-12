@@ -1,6 +1,6 @@
 #private variable can be access only within the methos
 class myClass:
-    __a=10 # this is the private variable
+    __a=10 # this is the private variable. private variable define with 2 under score
 
     def disp(self):  # created method with in the class to access private variable
         print(self.__a)
@@ -14,10 +14,10 @@ obj.disp()
 # create private method can be access only within the class
 
 class myClassOne:
-    def __dis(self): # this is private method
+    def __dis(self): # this is private method "__dis(self)" private method define with 2 under score
         print("This is private method")
 
-    def dipone(self): #
+    def dipone(self): # # This is public method "disone(self) public method define without under score
         self.__dis()
         print("This is public method")
 
