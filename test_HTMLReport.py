@@ -14,7 +14,7 @@ class Test_OrangeHRM():
 
     def test_homePageTitle(self,setup):
         self.driver.get("https://opensource-demo.orangehrmlive.com/")
-        assert self.driver.title=="OrangeHRM123"
+        assert self.driver.title=="OrangeHRM"
 
 
     def test_Login(self,setup):

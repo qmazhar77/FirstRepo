@@ -13,10 +13,14 @@ class OrangeHRMTest(unittest.TestCase):
         self.assertEqual("OrangeHRM",self.driver.title,"webpage title is not matching")
 
     def test_Login(self):
+
+        driver = self.driver
         self.driver.get("https://opensource-demo.orangehrmlive.com/")
         self.driver.find_element_by_id("txtUsername").send_keys("admin")
         self.driver.find_element_by_id("txtPassword").send_keys("admin123")
         self.driver.find_element_by_id("btnLogin").submit()
+
+
         self.assertEqual("OrangeHRM",self.driver.title,"wabpage title is not matching")
 
     @classmethod
